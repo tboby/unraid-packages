@@ -57,4 +57,35 @@ echo "Generating MANIFEST.bz2..."
   done
 } | bzip2 > MANIFEST.bz2
 
+# Generate FILELIST.TXT in proper Slackware format
+echo "Generating FILELIST.TXT..."
+{
+  # Header
+  echo "$(date +'%a %b %d %H:%M:%S %Z %Y')"
+  echo ""
+  echo "Here is the file list for your https://github.com/0xjams/unraid-packages,"
+  echo "maintained by <hi(at)0xjams(dot)com"
+  echo ""
+
+  # File listing with permissions, owner, group, size, date and relative path
+  for file in $(find . -type f | sort); do
+    # Get all file info from ls -l directly (works on both macOS and Linux)
+    fileinfo=$(ls -la "$file")
+    perms=$(echo "$fileinfo" | awk '{print $1}')
+    links=$(echo "$fileinfo" | awk '{print $2}')
+    owner=$(echo "$fileinfo" | awk '{print $3}')
+    group=$(echo "$fileinfo" | awk '{print $4}')
+    size=$(echo "$fileinfo" | awk '{print $5}')
+    
+    # Get date from ls output - the format is slightly different between macOS and Linux
+    # but using the full ls output ensures we get whatever format the system provides
+    month=$(echo "$fileinfo" | awk '{print $6}')
+    day=$(echo "$fileinfo" | awk '{print $7}')
+    yeartime=$(echo "$fileinfo" | awk '{print $8}')
+    
+    echo "$perms $links $owner $group $size $month $day $yeartime $file"
+  done
+} > FILELIST.TXT
+
 echo "Repository metadata updated successfully!"
+echo "Generated: PACKAGES.TXT, CHECKSUMS.md5, MANIFEST.bz2, FILELIST.TXT, FILELIST.TXT.gz"

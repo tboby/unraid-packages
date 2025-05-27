@@ -11,10 +11,10 @@ cd packages/chezmoi
 ./build.sh
 cd ../..
 
+rm -rf slackware64/packages/install || true
+
 echo "Updating repository metadata..."
 ./scripts/update-repo.sh
-
-rm -rf slackware64/packages/install || true
 
 echo "All packages built successfully!"
 echo ""
