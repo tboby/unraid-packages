@@ -1,0 +1,10 @@
+# Build artifacts
+*.tar.gz
+*.tar.xz
+*.tgz
+/tmp/
+**/tmp/
+*.log
+
+# But keep the built packages
+!slackware64/packages/*.txz
