@@ -12,7 +12,7 @@ Auto-maintained Slackware packages for UnRAID, compatible with [un-get](https://
 Add this repository to your un-get sources:
 
 ```bash
-echo "https://raw.githubusercontent.com/0xjams/unraid-packages/master/slackware64/packages 0xjams-repo" >> /boot/config/plugins/un-get/sources.list
+echo "https://raw.githubusercontent.com/0xjams/unraid-packages/refs/heads/main/slackware64/packages/ 0xjams-repo" >> /boot/config/plugins/un-get/sources.list
 ```
 
 Then install packages:
