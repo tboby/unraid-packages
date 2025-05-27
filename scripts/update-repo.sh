@@ -63,8 +63,8 @@ echo "Generating FILELIST.TXT..."
   # Header
   echo "$(date +'%a %b %d %H:%M:%S %Z %Y')"
   echo ""
-  echo "Here is the file list for your https://github.com/0xjams/unraid-packages,"
-  echo "maintained by <hi(at)0xjams(dot)com"
+  echo "Here is the file list for https://github.com/0xjams/unraid-packages,"
+  echo "maintained by <hi(at)0xjams(dot)com>"
   echo ""
 
   # File listing with permissions, owner, group, size, date and relative path
@@ -88,4 +88,4 @@ echo "Generating FILELIST.TXT..."
 } > FILELIST.TXT
 
 echo "Repository metadata updated successfully!"
-echo "Generated: PACKAGES.TXT, CHECKSUMS.md5, MANIFEST.bz2, FILELIST.TXT, FILELIST.TXT.gz"
+echo "Generated: PACKAGES.TXT, CHECKSUMS.md5, MANIFEST.bz2, FILELIST.TXT"
