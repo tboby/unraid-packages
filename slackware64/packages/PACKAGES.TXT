@@ -1,38 +1,30 @@
-PACKAGES.TXT; Mon May 26 23:22:53 -05 2025
+PACKAGES.TXT; Fri Oct 10 20:10:51 UTC 2025
 
 PACKAGE NAME: atuin-18.6.1-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./atuin-18.6.1-x86_64-1_unRAID.txz
 PACKAGE SIZE (compressed): 8684320
-PACKAGE SIZE (uncompressed): 0
+PACKAGE SIZE (uncompressed): 37550696
 PACKAGE DESCRIPTION:
-     |-----handy-ruler------------------------------------------------------|
-atuin: atuin (shell history manager)
-atuin:
-atuin: Atuin replaces your existing shell history with a SQLite database,
-atuin: and records additional context for your commands. Additionally, it
-atuin: provides optional and fully encrypted synchronisation of your history
-atuin: between machines, via an Atuin server.
-atuin:
-atuin: Homepage: https://github.com/atuinsh/atuin
-atuin:
-atuin:
-atuin:
+atuin-18.6.1-x86_64-1_unRAID.txz: Error extracting description
+
+PACKAGE NAME: atuin-18.8.0-x86_64-1_unRAID.txz
+PACKAGE LOCATION: ./atuin-18.8.0-x86_64-1_unRAID.txz
+PACKAGE SIZE (compressed): 8926900
+PACKAGE SIZE (uncompressed): 39010632
+PACKAGE DESCRIPTION:
+atuin-18.8.0-x86_64-1_unRAID.txz: Error extracting description
 
 PACKAGE NAME: chezmoi-2.62.5-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./chezmoi-2.62.5-x86_64-1_unRAID.txz
 PACKAGE SIZE (compressed): 8427472
-PACKAGE SIZE (uncompressed): 0
+PACKAGE SIZE (uncompressed): 32094077
 PACKAGE DESCRIPTION:
-       |-----handy-ruler------------------------------------------------------|
-chezmoi: chezmoi (dotfiles manager)
-chezmoi:
-chezmoi: Manage your dotfiles across multiple diverse machines, securely.
-chezmoi: chezmoi helps you manage your personal configuration files (dotfiles,
-chezmoi: like ~/.gitconfig) across multiple machines.
-chezmoi:
-chezmoi: Homepage: https://github.com/twpayne/chezmoi
-chezmoi:
-chezmoi:
-chezmoi:
-chezmoi:
+chezmoi-2.62.5-x86_64-1_unRAID.txz: Error extracting description
+
+PACKAGE NAME: chezmoi-2.66.0-x86_64-1_unRAID.txz
+PACKAGE LOCATION: ./chezmoi-2.66.0-x86_64-1_unRAID.txz
+PACKAGE SIZE (compressed): 9464756
+PACKAGE SIZE (uncompressed): 35668933
+PACKAGE DESCRIPTION:
+chezmoi-2.66.0-x86_64-1_unRAID.txz: Error extracting description
 
