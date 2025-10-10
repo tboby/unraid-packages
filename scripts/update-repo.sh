@@ -60,7 +60,7 @@ echo "Generating PACKAGES.TXT..."
         # Extract to stdout only, not to filesystem
         tar -xOf "$pkg" "install/slack-desc" 2>/dev/null | 
           grep -v "^#" | grep -v "^$" || 
-          echo "$pkg: Error extracting description"
+          echo "Package description not available"
       else
         echo "$pkg: Package description not available"
       fi
