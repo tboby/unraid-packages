@@ -5,6 +5,24 @@ set -e
 REPO_DIR="slackware64/packages"
 cd "$REPO_DIR"
 
+# Detect upstream changes by comparing sorted checksums of package files.
+# If nothing changed, avoid touching any tracked files to keep git clean.
+TMP_MD5=".CHECKSUMS.md5.new"
+if ls *.txz >/dev/null 2>&1; then
+  md5sum *.txz | sort > "$TMP_MD5"
+else
+  # No packages present; create an empty temp file for comparison
+  : > "$TMP_MD5"
+fi
+
+if [ -f CHECKSUMS.md5 ]; then
+  if cmp -s "$TMP_MD5" CHECKSUMS.md5; then
+    echo "No upstream updates detected. Skipping repository metadata update."
+    rm -f "$TMP_MD5"
+    exit 0
+  fi
+fi
+
 # Generate PACKAGES.TXT
 echo "Generating PACKAGES.TXT..."
 {
@@ -39,9 +57,9 @@ echo "Generating PACKAGES.TXT..."
   done
 } > PACKAGES.TXT
 
-# Generate CHECKSUMS.md5
+# Write CHECKSUMS.md5 from the precomputed, sorted list
 echo "Generating CHECKSUMS.md5..."
-md5sum *.txz > CHECKSUMS.md5
+mv -f "$TMP_MD5" CHECKSUMS.md5
 
 # Generate MANIFEST.bz2 (detailed file listing)
 echo "Generating MANIFEST.bz2..."
