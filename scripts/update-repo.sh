@@ -3,6 +3,7 @@
 set -e
 
 REPO_DIR="slackware64/packages"
+mkdir -p "$REPO_DIR"
 cd "$REPO_DIR"
 
 # Detect upstream changes by comparing sorted checksums of package files.
@@ -15,10 +16,21 @@ else
   : > "$TMP_MD5"
 fi
 
+# If there are no packages and no existing CHECKSUMS.md5, skip updating metadata
+if ! ls *.txz >/dev/null 2>&1 && [ ! -f CHECKSUMS.md5 ]; then
+  echo "No packages present and no existing repository metadata. Skipping update."
+  rm -f "$TMP_MD5"
+  exit 0
+fi
+
+# Normalize existing CHECKSUMS.md5 (line endings and order) before comparison to avoid metadata-only updates
 if [ -f CHECKSUMS.md5 ]; then
-  if cmp -s "$TMP_MD5" CHECKSUMS.md5; then
+  TMP_MD5_EXISTING=".CHECKSUMS.md5.existing"
+  # Strip CRLF if present, then sort to normalize order
+  tr -d '\r' < CHECKSUMS.md5 | sort > "$TMP_MD5_EXISTING"
+  if cmp -s "$TMP_MD5" "$TMP_MD5_EXISTING"; then
     echo "No upstream updates detected. Skipping repository metadata update."
-    rm -f "$TMP_MD5"
+    rm -f "$TMP_MD5" "$TMP_MD5_EXISTING"
     exit 0
   fi
 fi
@@ -60,6 +72,8 @@ echo "Generating PACKAGES.TXT..."
 # Write CHECKSUMS.md5 from the precomputed, sorted list
 echo "Generating CHECKSUMS.md5..."
 mv -f "$TMP_MD5" CHECKSUMS.md5
+# Cleanup normalized temp if it exists
+rm -f "$TMP_MD5_EXISTING"
 
 # Generate MANIFEST.bz2 (detailed file listing)
 echo "Generating MANIFEST.bz2..."
