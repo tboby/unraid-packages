@@ -51,11 +51,13 @@ mkdir -p $PKG/install
 echo "Installing slack-desc..."
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
-# Create package
+# Create package (normalize permissions/ownership for Unraid)
 PACKAGE_FILE="$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.$PKGTYPE"
 echo "Creating package $PACKAGE_FILE..."
 cd $PKG
-tar -cJf $OUTPUT/$PACKAGE_FILE .
+# Create archive with root:root ownership encoded
+# --numeric-owner ensures 0:0 is used regardless of names on build host
+tar --numeric-owner --owner=0 --group=0 -cJf $OUTPUT/$PACKAGE_FILE .
 
 # Move to repository
 mkdir -p $CWD/$REPO_DIR
