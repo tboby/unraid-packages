@@ -1,4 +1,4 @@
-PACKAGES.TXT; Sun Oct 12 11:28:24 UTC 2025
+PACKAGES.TXT; Sun Oct 12 11:34:10 UTC 2025
 
 PACKAGE NAME: atuin-18.6.1-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./atuin-18.6.1-x86_64-1_unRAID.txz
@@ -9,8 +9,8 @@ atuin-18.6.1-x86_64-1_unRAID.txz: Package description not available
 
 PACKAGE NAME: atuin-18.8.0-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./atuin-18.8.0-x86_64-1_unRAID.txz
-PACKAGE SIZE (compressed): 8931004
-PACKAGE SIZE (uncompressed): 39010835
+PACKAGE SIZE (compressed): 8930280
+PACKAGE SIZE (uncompressed): 39010753
 PACKAGE DESCRIPTION:
 atuin-18.8.0-x86_64-1_unRAID.txz: Package description not available
 
@@ -23,8 +23,8 @@ chezmoi-2.62.5-x86_64-1_unRAID.txz: Package description not available
 
 PACKAGE NAME: chezmoi-2.66.0-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./chezmoi-2.66.0-x86_64-1_unRAID.txz
-PACKAGE SIZE (compressed): 9463184
-PACKAGE SIZE (uncompressed): 35669136
+PACKAGE SIZE (compressed): 9460836
+PACKAGE SIZE (uncompressed): 35669054
 PACKAGE DESCRIPTION:
 chezmoi-2.66.0-x86_64-1_unRAID.txz: Package description not available
 
