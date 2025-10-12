@@ -8,6 +8,4 @@ maintained by <hi(at)0xjams(dot)com>
 -rw-r--r-- 1 runner runner 563 Oct 10 20:12 ./MANIFEST.bz2
 -rw-r--r-- 1 runner runner 1088 Oct 10 20:12 ./PACKAGES.TXT
 -rw-r--r-- 1 runner runner 8684320 Oct 10 20:12 ./atuin-18.6.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8929152 Oct 10 20:12 ./atuin-18.8.0-x86_64-1_unRAID.txz
 -rw-r--r-- 1 runner runner 8427472 Oct 10 20:12 ./chezmoi-2.62.5-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9460880 Oct 10 20:12 ./chezmoi-2.66.0-x86_64-1_unRAID.txz
