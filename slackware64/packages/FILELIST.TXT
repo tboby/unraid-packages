@@ -1,22 +1,23 @@
-Thu Jan 08 21:01:31 UTC 2026
+Sat Jan 10 03:42:37 UTC 2026
 
 Here is the file list for https://github.com/0xjams/unraid-packages,
 maintained by <hi(at)0xjams(dot)com>
 
--rw-r--r-- 1 runner runner 890 Jan 8 21:01 ./CHECKSUMS.md5
--rw-r--r-- 1 runner runner 196 Jan 8 21:01 ./FILELIST.TXT
--rw-r--r-- 1 runner runner 1089 Jan 8 21:01 ./MANIFEST.bz2
--rw-r--r-- 1 runner runner 3520 Jan 8 21:01 ./PACKAGES.TXT
--rw-r--r-- 1 runner runner 8887160 Jan 8 21:01 ./atuin-18.10.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8684676 Jan 8 21:00 ./atuin-18.6.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8930280 Jan 8 21:00 ./atuin-18.8.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8888232 Jan 8 21:00 ./atuin-18.9.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8882748 Jan 8 21:00 ./chezmoi-2.47.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 8427472 Jan 8 21:00 ./chezmoi-2.62.5-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9460836 Jan 8 21:00 ./chezmoi-2.66.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9481820 Jan 8 21:00 ./chezmoi-2.66.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9484304 Jan 8 21:00 ./chezmoi-2.67.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9545448 Jan 8 21:00 ./chezmoi-2.67.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9545268 Jan 8 21:00 ./chezmoi-2.68.0-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9550032 Jan 8 21:00 ./chezmoi-2.68.1-x86_64-1_unRAID.txz
--rw-r--r-- 1 runner runner 9821656 Jan 8 21:00 ./chezmoi-2.69.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 959 Jan 10 03:42 ./CHECKSUMS.md5
+-rw-r--r-- 1 runner runner 197 Jan 10 03:42 ./FILELIST.TXT
+-rw-r--r-- 1 runner runner 1120 Jan 10 03:42 ./MANIFEST.bz2
+-rw-r--r-- 1 runner runner 3789 Jan 10 03:42 ./PACKAGES.TXT
+-rw-r--r-- 1 runner runner 8887160 Jan 10 03:41 ./atuin-18.10.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 8684676 Jan 10 03:41 ./atuin-18.6.1-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 8930280 Jan 10 03:41 ./atuin-18.8.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 8888232 Jan 10 03:41 ./atuin-18.9.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 8882748 Jan 10 03:41 ./chezmoi-2.47.1-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 8427472 Jan 10 03:41 ./chezmoi-2.62.5-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9460836 Jan 10 03:41 ./chezmoi-2.66.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9481820 Jan 10 03:41 ./chezmoi-2.66.1-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9484304 Jan 10 03:41 ./chezmoi-2.67.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9545448 Jan 10 03:41 ./chezmoi-2.67.1-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9545268 Jan 10 03:41 ./chezmoi-2.68.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9550032 Jan 10 03:41 ./chezmoi-2.68.1-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9821656 Jan 10 03:41 ./chezmoi-2.69.0-x86_64-1_unRAID.txz
+-rw-r--r-- 1 runner runner 9645928 Jan 10 03:42 ./chezmoi-2.69.1-x86_64-1_unRAID.txz
