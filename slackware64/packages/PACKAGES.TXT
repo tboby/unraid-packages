@@ -1,4 +1,4 @@
-PACKAGES.TXT; Wed Jul  8 06:05:48 UTC 2026
+PACKAGES.TXT; Thu Jul  9 06:58:06 UTC 2026
 
 PACKAGE NAME: atuin-18.10.0-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./atuin-18.10.0-x86_64-1_unRAID.txz
@@ -97,6 +97,13 @@ PACKAGE SIZE (compressed): 7945276
 PACKAGE SIZE (uncompressed): 31472268
 PACKAGE DESCRIPTION:
 atuin-18.16.1-x86_64-1_unRAID.txz: Package description not available
+
+PACKAGE NAME: atuin-18.17.0-x86_64-1_unRAID.txz
+PACKAGE LOCATION: ./atuin-18.17.0-x86_64-1_unRAID.txz
+PACKAGE SIZE (compressed): 8723784
+PACKAGE SIZE (uncompressed): 34814060
+PACKAGE DESCRIPTION:
+atuin-18.17.0-x86_64-1_unRAID.txz: Package description not available
 
 PACKAGE NAME: atuin-18.6.1-x86_64-1_unRAID.txz
 PACKAGE LOCATION: ./atuin-18.6.1-x86_64-1_unRAID.txz
